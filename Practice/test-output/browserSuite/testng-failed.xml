@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [browserSuite]">
+  <test name="Test1(failed)">
+    <classes>
+      <class name="browsers.CrossBrowsing">
+        <methods>
+          <include name="test1"/>
+        </methods>
+      </class> <!-- browsers.CrossBrowsing -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+  <test name="Test2(failed)">
+    <classes>
+      <class name="browsers.CrossBrowsing">
+        <methods>
+          <include name="test1"/>
+        </methods>
+      </class> <!-- browsers.CrossBrowsing -->
+    </classes>
+  </test> <!-- Test2(failed) -->
+</suite> <!-- Failed suite [browserSuite] -->
