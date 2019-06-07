@@ -37,8 +37,8 @@ public Object[][] TestDataFeed() throws Exception, Exception
 {
 	
 	wb = new XSSFWorkbook(new FileInputStream(new File("C:\\Users\\altaf\\eclipse-workspace-practice\\Hybrid.com\\ApplicationTestData\\lakhani.xlsx")));
-	int rows= wb.getSheetAt(0).getLastRowNum();
-	int rowsNum= rows+1;
+	rows= wb.getSheetAt(0).getLastRowNum();
+	rowsNum= rows+1;
 	
 	Object[][] data= new Object[rowsNum][2];
 	

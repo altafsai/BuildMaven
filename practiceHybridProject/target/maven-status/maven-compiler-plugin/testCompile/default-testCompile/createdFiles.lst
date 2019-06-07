@@ -1,0 +1,8 @@
+dataProvider\ConfigDataProvider.class
+factory\BrowserFactory.class
+pages\homePage.class
+dataProvider\ExcelDataProvider.class
+factory\DataProviderFactory.class
+testCases\yahooPagesReports.class
+pages\logINPage.class
+testCases\yahooPagesTest.class

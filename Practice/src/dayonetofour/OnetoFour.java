@@ -9,6 +9,7 @@ import org.testng.annotations.Test;
 public class OnetoFour {
 	
 	@Test(retryAnalyzer=SampleTestcases.retryDemo.class)
+
 	public static void verifyTitle(){
     int qty= 5;
     int price = 2;
