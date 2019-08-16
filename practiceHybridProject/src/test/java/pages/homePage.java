@@ -8,7 +8,7 @@ import factory.BrowserFactory;
 
 public class homePage extends BrowserFactory
 {
-    
+    WebDriver driver;
 	public homePage(WebDriver Idriver)
 	{
 		this.driver=Idriver;

@@ -12,9 +12,9 @@ import org.testng.Assert;
 
 import factory.BrowserFactory;
 
-public class logINPage extends BrowserFactory
+public class logINPage 
 {
-	
+WebDriver driver;
 public logINPage(WebDriver ldriver)
 {
 	this.driver=ldriver;

@@ -32,5 +32,6 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/altaf/Downloads/extentreports-java-3.1.5/extentreports-java-3.1.5/extentreports-3.1.5.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

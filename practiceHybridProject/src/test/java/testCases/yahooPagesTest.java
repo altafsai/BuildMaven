@@ -6,56 +6,56 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
+import dataProvider.ConfigDataProvider;
+import dataProvider.ExcelDataProvider;
 import factory.BrowserFactory;
-import factory.DataProviderFactory;
 import pages.homePage;
 import pages.logINPage;
 
-public class yahooPagesTest extends BrowserFactory
+public class yahooPagesTest 
 
 {
-   
-    
-    @BeforeMethod
-    //@Test
-	public static void setUp()
-	{
-		//BrowserFactory.getBrowser("chrome");
-		//driver.get(DataProviderFactory.getConfig().appURL());
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\altaf\\Downloads\\chromedriver_win32\\chromedriver.exe");
-    	driver= new ChromeDriver();
-		//driver.get(DataProviderFactory.getConfig().appURL());
 
-    	//driver= new FirefoxDriver();
-    	driver.get("http://www.yahoo.com");
-    	driver.manage().window().maximize();
-    	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		
-	}
+	WebDriver driver;
+
+	//@Test(priority = 1)
+	public void setUp() throws Exception {
+		//BrowserFactory browserFactory= new BrowserFactory();
+		BrowserFactory.getBrowser("chrome");}
 	
-    
-    @Test
-	public void test()
+	@Test(priority = 1)
+	public void url() 
 	{
-		homePage hp= PageFactory.initElements(driver, homePage.class);
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\altaf\\Downloads\\chromedriver_win32 (1)\\chromedriver.exe");
+	    driver= new ChromeDriver();
+	    driver.get("http://www.yahoo.com");
+	}
+
+	@Test(priority = 2)
+	public void test1() throws Exception {
+		homePage hp = PageFactory.initElements(driver, homePage.class);
 		hp.logIn();
-		
-		logINPage lp=PageFactory.initElements(driver, logINPage.class);
+
+		logINPage lp = PageFactory.initElements(driver, logINPage.class);
 		lp.verifyLink();
-		lp.userLogin("alex");
-	
-		
+
+		SoftAssert sa = new SoftAssert();
+		System.out.println(driver.getTitle());
+		sa.assertTrue(driver.getTitle().contains("Yahoo"));
+
+		ExcelDataProvider e = new ExcelDataProvider();
+		lp.userLogin(e.getData(0, 0, 0));
+
+		Thread.sleep(3000);
+
+		sa.assertAll();
+
 	}
-	
-    @AfterMethod
-	public void close()
-	{
-    driver.close();
-}
-	
-	
+
 }
