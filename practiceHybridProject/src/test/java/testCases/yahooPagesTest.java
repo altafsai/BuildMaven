@@ -9,6 +9,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
@@ -30,11 +31,12 @@ public class yahooPagesTest
 		BrowserFactory.getBrowser("chrome");}
 	
 	@Test(priority = 1)
-	public void url() 
+	@Parameters("URL")
+	public void url(String URL) 
 	{
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\altaf\\Downloads\\chromedriver_win32 (1)\\chromedriver.exe");
 	    driver= new ChromeDriver();
-	    driver.get("http://www.yahoo.com");
+	    driver.get(URL);
 	}
 
 	@Test(priority = 2)

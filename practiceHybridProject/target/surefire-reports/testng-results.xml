@@ -2,20 +2,27 @@
 <testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="testCases.yahooPagesTest" duration-ms="28663" started-at="2019-08-16T16:37:07Z" finished-at="2019-08-16T16:37:36Z">
+  <suite name="Suite" duration-ms="18816" started-at="2019-08-19T14:02:45Z" finished-at="2019-08-19T14:03:04Z">
     <groups>
     </groups>
-    <test name="Command line test" duration-ms="28663" started-at="2019-08-16T16:37:07Z" finished-at="2019-08-16T16:37:36Z">
+    <test name="Test" duration-ms="18816" started-at="2019-08-19T14:02:45Z" finished-at="2019-08-19T14:03:04Z">
       <class name="testCases.yahooPagesTest">
-        <test-method status="PASS" signature="url()[pri:1, instance:testCases.yahooPagesTest@2c6a3f77]" name="url" duration-ms="16596" started-at="2019-08-16T11:37:07Z" finished-at="2019-08-16T11:37:24Z">
+        <test-method status="PASS" signature="url(java.lang.String)[pri:1, instance:testCases.yahooPagesTest@9f70c54]" name="url" duration-ms="12840" started-at="2019-08-19T09:02:45Z" finished-at="2019-08-19T09:02:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://www.yahoo.com]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- url -->
-        <test-method status="PASS" signature="test1()[pri:2, instance:testCases.yahooPagesTest@2c6a3f77]" name="test1" duration-ms="12012" started-at="2019-08-16T11:37:24Z" finished-at="2019-08-16T11:37:36Z">
+        <test-method status="PASS" signature="test1()[pri:2, instance:testCases.yahooPagesTest@9f70c54]" name="test1" duration-ms="5941" started-at="2019-08-19T09:02:58Z" finished-at="2019-08-19T09:03:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test1 -->
       </class> <!-- testCases.yahooPagesTest -->
-    </test> <!-- Command line test -->
-  </suite> <!-- testCases.yahooPagesTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
