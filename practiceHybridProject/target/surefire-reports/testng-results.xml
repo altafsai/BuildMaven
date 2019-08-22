@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="18816" started-at="2019-08-19T14:02:45Z" finished-at="2019-08-19T14:03:04Z">
+  <suite name="Suite" duration-ms="19505" started-at="2019-08-22T14:30:47Z" finished-at="2019-08-22T14:31:06Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="18816" started-at="2019-08-19T14:02:45Z" finished-at="2019-08-19T14:03:04Z">
+    <test name="Test" duration-ms="19505" started-at="2019-08-22T14:30:47Z" finished-at="2019-08-22T14:31:06Z">
       <class name="testCases.yahooPagesTest">
-        <test-method status="PASS" signature="url(java.lang.String)[pri:1, instance:testCases.yahooPagesTest@9f70c54]" name="url" duration-ms="12840" started-at="2019-08-19T09:02:45Z" finished-at="2019-08-19T09:02:58Z">
+        <test-method status="PASS" signature="url(java.lang.String)[pri:1, instance:testCases.yahooPagesTest@9f70c54]" name="url" duration-ms="11353" started-at="2019-08-22T09:30:47Z" finished-at="2019-08-22T09:30:58Z">
           <params>
             <param index="0">
               <value>
@@ -18,7 +18,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- url -->
-        <test-method status="PASS" signature="test1()[pri:2, instance:testCases.yahooPagesTest@9f70c54]" name="test1" duration-ms="5941" started-at="2019-08-19T09:02:58Z" finished-at="2019-08-19T09:03:04Z">
+        <test-method status="PASS" signature="test1()[pri:2, instance:testCases.yahooPagesTest@9f70c54]" name="test1" duration-ms="8112" started-at="2019-08-22T09:30:58Z" finished-at="2019-08-22T09:31:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test1 -->
