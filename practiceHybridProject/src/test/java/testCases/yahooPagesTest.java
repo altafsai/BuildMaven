@@ -31,7 +31,7 @@ public class yahooPagesTest
 		BrowserFactory.getBrowser("chrome");}
 	
 	@Test(priority = 1)
-	@Parameters("URL")
+	//@Parameters("URL")
 	public void url(String URL) 
 	{
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\altaf\\Downloads\\chromedriver_win32 (1)\\chromedriver.exe");
